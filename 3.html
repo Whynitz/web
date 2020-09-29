@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+  #content{
+    padding-top: 40px;
+  }
+</style>
+<script src="colors.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1><a href="index.html">WEB</a></h1>
+<div id="grid0">
+<div id="button">
+<input type="button" value="night" onclick="
+  nightDayHandler(this);
+">
+</div>
+<h4 style="text-align:right">by 김고리</h4>
+</div>
+<div id="grid">
+<ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <li><a href="3.html">Javascript</a></li>
+</ol>
+<div id="content">
+  <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_1280.jpg" width="60%">
+  <h2  style="margin-top:50px">JavaScript</h2>
+  <p>Javascript is a high-level, dynamic, weakly typed, prototype-based, multi-program, and interpreted programming language. Alongside HTML and CSS,
+    JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine.
+    Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supproting the spec fully, and with many engines supporting additional features beyond ECMA.</p><br><br>
+  <h2>JavaScript in HTML</h2>
+  <ul>
+    <li>script tag</li>
+    <li>event (ex: onclick, onchange ...)</li>
+    <li>inspect → console</li>
+  </ul>
+  <h2>Data Type</h2>
+  <ul>
+    <li>number</li>
+    <li>string</li>
+    <li>boolean : true / false <br> <i>*source: <a target="_blank" href="https://dorey.github.io/JavaScript-Equality-Table/">https://dorey.github.io/JavaScript-Equality-Table/</a></i> </li>
+  </ul>
+  <h2>Comparison Operators</h2>
+  <ul>
+    <li>===</li>
+    <li>&lt;</li>
+    <li>&gt;</li>
+  </ul>
+  <h2>Logical Operators</h2>
+  <ul>
+    <li>&& (AND)</li>
+    <li>|| (OR)</li>
+    <li>! (NOT)</li>
+  </ul>
+  <h2>IF</h2>
+  <p class="graycode"><code>if(<i>boolean</i>){<br>
+    blah blah blah;<br>
+  } else if (<i>boolean</i>){<br>
+    blah blah blah;<br>
+  } else{<br>
+    blah blah;<br>
+  }</code></p>
+  <h2>WHILE</h2>
+  <p class="graycode"><code>
+    <span class="while">var i=0;</span><br>
+    while(<span class="while">i<10</span><i style="color: white"> → boolean </i>){<br>
+    blah blah blah;<br>
+    blah blah blah;<br>
+    <span style="color: white">// i의 값이 1씩 증가한다.<br></span>
+    <span class="while">i++;</span><br>
+    }
+  </code></p>
+  <h2>FOR</h2>
+  <p class="graycode"><code>
+    for(<span class="while">var i=0;i<10;i++</span>){<br>
+      blah blah blah;<br>
+      blah blah blah;<br>
+    }
+  </code></p>
+  <h3>how to control 반복문 (While, For)</h3>
+   <ul>
+     <li>break</li>
+     <li>continue</li>
+   </ul><br>
+  <h2>Function</h2>
+  <p class="graycode"><code>function <i>function_name</i>(<i>parameter</i>){<br>
+    blahblah;<br>
+    blahblah with the parameter..;<br>}</code></p><br>
+    or<br>
+    <p class="graycode"><code>var <i>function_name</i> = function(<i>parameter</i>){<br>
+      blahblah;<br>
+      blahblah with the parameter..;<br>}</p></code>
+  <ul>
+    <li>parameter</li>
+    <li>argument</li>
+    <li>return</li>
+  </ul>
+  <h2>Array</h2>
+  <ul>
+    <li>.length</li>
+    <li>.push(<i>elements</i>)</li>
+    <li>.concat(<i>arrays</i>)</li>
+    <li>.unshift(<i>elements</i>)</li>
+    <li>.splice(<i>index,howmany,elements</i>)</li><br>
+    <li>.shift()</li>
+    <li>.pop()</li><br>
+    <li>.sort()</li>
+    <li>.reverse()</li>
+  </ul>
+  <h2>Object</h2>
+  <span style="color: white; background-color: powderblue;">think as a directory! like a folder with no index... </span><br>
+  <code>var <i>object</i> = {<br>
+    'key1': value1,<br>
+    'key2': value2<br>
+  }</code><br><br>
+  object['key1'] = value1 / object.key1 = value1
+
+  <h3 style="padding-top: 7px;">how to iterate</h3>
+  use <span style="background-color: lightgray;">for...in</span><br>
+  <code>for(var key in <i>object_name</i>){<br>
+    <br>
+  }</code><br>
+  *key = property<br>
+  *<strong>this</strong>: <br>
+  in a method, <span style="background-color: powderblue;">this</span> refers to the owner object.<br>
+  in an event, <span style="background-color: powderblue;">this</span> refers to the element that received the event.<br><br>
+</div>
+</div>
+</body>
+</html>
